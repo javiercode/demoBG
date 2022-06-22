@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=hk target/demoBG-0.0.1.jar
