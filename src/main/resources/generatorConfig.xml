@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+  <context id="context1" targetRuntime="MyBatis3">
+   <property name="autoDelimitKeywords" value="false" />
+        <property name="javaFileEncoding" value="UTF-8" />
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter" />
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter" />
+        <property name="beginningDelimiter" value="`" />
+        <property name="endingDelimiter" value="`" />
+        <commentGenerator>
+            <property name="suppressDate" value="true" />
+            <property name="suppressAllComments" value="false" />
+        </commentGenerator>
+        <jdbcConnection driverClass="oracle.jdbc.OracleDriver" connectionURL="jdbc:oracle:thin:@172.16.1.20:1521/BGDB" userId="GANADERO" password="!7Kcht2!" />
+        <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
+        	<property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+		<javaModelGenerator targetPackage="bg.com.bo.demoBG.domain" targetProject="demoBG/src/main/java">
+			<property name="enableSubPackages" value="false" />
+            <property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="bg.com.bo.demoBG.sqlmap" targetProject="demoBG/src/main/java" />
+		<javaClientGenerator targetPackage="bg.com.bo.demoBG.dao" targetProject="demoBG/src/main/java" type="ANNOTATEDMAPPER" />
+		<!--<table schema="ganadero" tableName="ACH_CAMARAS">
+			<property name="useActualColumnNames" value="true" />
+		</table>-->
+		<table schema="ganadero" tableName="ach_camaras">
+			<property name="useActualColumnNames" value="true" />
+			<columnOverride column="codigo" property="codigo" jdbcType="INTEGER" javaType="java.lang.Integer" />
+			<columnOverride column="descripcion" property="descripcion" jdbcType="VARCHAR" javaType="java.lang.String" />
+			<columnOverride column="tz_lock" property="tz_lock" jdbcType="VARCHAR" javaType="java.lang.Integer" />
+		</table>
+  </context>
+</generatorConfiguration>
