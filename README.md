@@ -79,10 +79,6 @@ Para ejecutar nativamente el proyecto usa el siguiente comando:
 java -jar SpringBootHolaMundo-0.0.1-SNAPSHOT.jar
 ```
 
-Se puede ver a continuación el resultado obtenido:
-
-<p align="center"><img src="Imagenes//[Maldiny]_Hola_Mundo_jar_ejecucion.png"></p>
-
 **[Ir al índice](#Índice)**
 
 ## Primer rest
