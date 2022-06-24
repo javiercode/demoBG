@@ -18,7 +18,7 @@ Para iniciar una aplicación SB (SpringBoot a partir de ahora) bastará con ejec
 
 [`Spring Boot`] es un framework enfocado a la creación de aplicaciones basadas en Spring sin necesidad de contenedor de aplicaciones.
 
-A pesar de poder ejecutar aplicaciones SB en Java 6 y Java 7 se recomienda su uso a partir de la versión de Java 8.
+A pesar de poder ejecutar aplicaciones SB en Java 17.
 
 El compilado se ejecuta con un entorno virtual JRE:
 
@@ -134,6 +134,8 @@ Para agreagar swwager solo añada la siguientes dependencias del siguiente [enla
 - Se podrá ver la documentacion asi:
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/api-docs.png"></p>
 - Tambien se podra ver el resultado asi:
+
+Se puede acceder al SWAGGER desde el siguiente [enlace](http://localhost:8080/demo-bg/api/swagger-ui/index.html).
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/swagger.png"></p>
 
 **[Ir al índice](#Índice)**
