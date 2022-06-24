@@ -6,8 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
-public class Response {
-    private Boolean estado;
-    private String mensaje;
+public class CamaraResponse extends Response{
+    private Integer codigo;
+    private String descripcion;
 }

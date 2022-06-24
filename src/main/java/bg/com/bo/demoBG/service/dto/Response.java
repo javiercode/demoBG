@@ -1,4 +1,4 @@
-package com.innovateapps.restaurant.domain.dto;
+package bg.com.bo.demoBG.service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,8 +6,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
-public class AuthenticatioRequest {
-    private String username;
-    private String password;
+
+public class Response {
+    private Boolean estado = true;
+    private String mensaje;
 }

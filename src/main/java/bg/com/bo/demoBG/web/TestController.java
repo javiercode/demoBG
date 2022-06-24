@@ -2,6 +2,7 @@ package bg.com.bo.demoBG.web;
 
 import javax.validation.Valid;
 
+import bg.com.bo.demoBG.service.dto.CamaraResponse;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,6 +28,15 @@ public class TestController {
     	AchCamaras c=achServicio.getCamaraACH();
     	System.out.println(c.getDescripcion());
         return new ResponseEntity<String>("Hola mundo!!"+c.getDescripcion(), HttpStatus.OK);
+    }
+
+    @GetMapping("/camara")
+    public ResponseEntity<CamaraResponse> Camara(){
+        CamaraResponse response = new CamaraResponse();
+        AchCamaras c=achServicio.getCamaraACH();
+        response.setDescripcion(c.getDescripcion());
+        response.setCodigo(c.getCodigo());
+        return new ResponseEntity<CamaraResponse>(response, HttpStatus.OK);
     }
     
 	/*@PostMapping(value = "/getconexion", consumes = "application/json")
