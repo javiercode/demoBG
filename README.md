@@ -110,7 +110,7 @@ Para ejecutar el archivo simplemente es ejecutar el siguiente comando:
 ```cmd
 mvn spring-boot:run
 ```
-<p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/resources/assets/holaMundo.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/holaMundo.png"></p>
 
 **[Ir al índice](#Índice)**
 ## consejos
@@ -136,9 +136,9 @@ Para agreagar swwager solo añada la siguientes dependencias del siguiente [enla
 </dependency>
 ```
 - Se podrá ver la documentacion asi:
-<p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/resources/assets/api-docs.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/api-docs.png"></p>
 - Tambien se podra ver el resultado asi:
-<p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/resources/assets/swagger.png"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/swagger.png"></p>
 
 **[Ir al índice](#Índice)**
 ## FAQs
