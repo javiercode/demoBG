@@ -5,12 +5,13 @@ SpringBoot es un framework de Spring que permite crear aplicaciones standalone, 
 Para iniciar una aplicación SB (SpringBoot a partir de ahora) bastará con ejecutar el comando "java -jar nombre_de_la_aplicacion.jar"
 
 ## Índice
-1. introducción
-2. instalación
-3. Habilitacion de entorno
+1. Introducción
+2. Instalación
+3. Habilitación de entorno
 4. Plantilla Springboot
 5. Primer rest
-7. consejos
+6. Capa Persistencia Mybatis
+7. Consejos
 8. FAQs
 9. referencias
 
@@ -109,9 +110,28 @@ mvn spring-boot:run
 <p align="center"><img src="https://raw.githubusercontent.com/javiercode/demoBG/main/src/main/resources/assets/holaMundo.png"></p>
 
 **[Ir al índice](#Índice)**
-## consejos
+
+## Capa Persistencia Mybatis
+MyBatis Generator (MBG) es un generador de código para MyBatis MyBatis. 
+Generará código para todas las versiones de MyBatis. Hará una introspección de una tabla de base de datos (o muchas tablas) y generará artefactos 
+que se pueden usar para acceder a la(s) tabla(s). Esto disminuye la molestia inicial de configurar objetos y archivos de configuración para 
+interactuar con las tablas de base de datos. MBG busca tener un gran impacto en el gran porcentaje de operaciones de base de datos que son 
+CRUD simples (Create, Retrieve, Update, Delete). Aún tendrá que codificar SQL y objetos para unir consultas o procedimientos almacenados.
+MBG genera código en diferentes estilos y para diferentes lenguajes, dependiendo de cómo esté configurado. Por ejemplo, MBG puede generar 
+código Java o Kotlin. Y MBG puede generar XML compatible con MyBatis3, aunque ahora se considera un uso heredado de MBG. Los estilos más recientes 
+de código generado no requieren XML.
+```xml
+└── src/main/resources
+    └── generatorConfig.xml
+```
+```Estructura
+└── src/main/java
+    └── bg.com.bo.demoBG.dao
+    └── bg.com.bo.demoBG.domain
+```
+## Consejos
 En el siguiente apartado se han recopilado distintos consejos obtenidos con la experiencia a la hora de realizar desarrollos mediante el framework de SB:
-### estructura de un proyecto SB
+### Estructura de un proyecto SB
 La estructuración típica de los ficheros de una aplicación SB con distintas capas se definirá siguiendo la siguiente nomenclatura de paquetes:
 ```xml
 └── src/main/java
